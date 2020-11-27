@@ -1,10 +1,10 @@
-package net.runelite.client.plugins.foodeater;
+package net.runelite.client.plugins.foodeater9;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("foodeater")
+@ConfigGroup("foodeater9")
 public interface FoodEaterConfig extends Config
 {
 

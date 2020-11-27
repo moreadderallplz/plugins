@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.foodeater;
+package net.runelite.client.plugins.foodeater9;
 
 import com.google.inject.Provides;
 import net.runelite.api.*;
@@ -27,7 +27,7 @@ import java.util.concurrent.TimeUnit;
 
 @Extension
 @PluginDescriptor(
-	name = "Food Eater",
+	name = "FoodEater9",
 	description = "Automatically eats food",
 	tags = {"combat", "notifications", "health", "food", "eat"},
 	enabledByDefault = false,
@@ -80,6 +80,11 @@ public class FoodEaterPlugin extends Plugin
 			Widget inventory = client.getWidget(WidgetInfo.INVENTORY);
 
 			if (inventory == null)
+			{
+				return;
+			}
+
+			if (client.getItemContainer(InventoryID.BANK) != null)
 			{
 				return;
 			}
