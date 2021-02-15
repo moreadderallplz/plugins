@@ -5,7 +5,7 @@ import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
 @ConfigGroup("foodeater9")
-public interface FoodEaterConfig extends Config
+public interface FoodEater9Config extends Config
 {
 
 	@ConfigItem(
